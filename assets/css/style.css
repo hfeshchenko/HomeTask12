@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container{
+    min-height: 100vh;
+}
+
+@media (min-width:768px){
+.firstpart{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 200px;
+    grid-template-areas: 'fone fone fone'
+                         'ftwo fthree ffour' ;
+}
+.fone{
+    grid-area: fone;
+}
+.ftwo{
+    grid-area: ftwo;
+}
+.fthree{
+    grid-area: fthree;
+}
+.ffour{
+    grid-area: ffour;
+}
+
+.secondpart{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    
+}
+}
